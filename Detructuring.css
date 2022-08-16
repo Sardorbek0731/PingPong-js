@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./bg_img.webp) no-repeat;
+  background-size: cover;
+}
+.mb {
+    margin-bottom: 20px;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-weight: 300;
+  user-select: none;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.blur {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(81, 81, 81, 0.4);
+  backdrop-filter: blur(10px);
+}
+.container {
+  width: 23rem;
+  background-color: rgba(222, 222, 222, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(68, 68, 68, 0.7);
+}
+.container img {
+  width: 100%;
+  border-radius: 20px;
+  height: 17.5rem;
+}
+.container_body {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container_body h1 {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+}
+.gamers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.to {
+  margin: 0 20px;
+  font-size: 25px;
+}
+#first_gamer_score,
+#second_gamer_score {
+  font-size: 40px;
+}
+.selected select {
+  border: none;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none;
+}
+.gamer_btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.gamer_btns button {
+  width: 6rem;
+  height: 3rem;
+}
+#first_gamer_btn {
+  background-color: rgb(15, 154, 93);
+}
+#second_gamer_btn {
+  background-color: #037b99;
+}
+#first_gamer_btn:hover,
+#score_clear:hover,
+#second_gamer_btn:hover {
+  transform: scale(0.95);
+}
+#score_clear {
+  width: 16rem;
+  height: 3rem;
+  background-color: red;
+}
+.link {
+  display: flex;
+  width: 16rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.link a {
+  text-decoration: none;
+  color: white;
+}
